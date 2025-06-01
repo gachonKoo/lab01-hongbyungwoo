@@ -1,5 +1,6 @@
 from divisors import divide
 import csv
+import os.path
 
 def func(x):
     return x + 2
@@ -15,3 +16,7 @@ def test_answer():
 
 def test_answer2():
     assert divide(4) == 2
+
+
+def test_answer3():
+    assert os.path.isfile("dataset.py")
