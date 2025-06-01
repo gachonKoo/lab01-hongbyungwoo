@@ -3,7 +3,7 @@ import csv
 import os.path
 
 def func(x):
-    return x + 2
+    return x + 2 
 
 def test_answer():
     with open('eggs.csv', 'w', newline='') as csvfile:
