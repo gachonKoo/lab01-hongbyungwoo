@@ -19,7 +19,7 @@ jobs:
       with:
         timeout: 10
         max-score: 10
-        setup-command: ''
+        setup-command: wget https://github.com/rfechner/fedcsis24-llm-textcat/blob/main/src/dataset.py
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
