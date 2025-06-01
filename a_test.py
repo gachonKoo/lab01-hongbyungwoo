@@ -11,5 +11,7 @@ def test_answer():
         spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])
 
     assert divide(4) == 3
-    
-    
+
+
+def test_answer2():
+    assert divide(4) == 2
