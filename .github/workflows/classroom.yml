@@ -25,9 +25,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: test2
-        setup-command: wget https://github.com/rfechner/fedcsis24-llm-textcat/blob/main/src/dataset.py;
-          pip install pytest;
-        command: pytest
+        setup-command: 'wget https://github.com/rfechner/fedcsis24-llm-textcat/blob/main/src/dataset.py; '
+        command: pip install pytest; pytest
         timeout: 10
         max-score: 4
     - name: Autograding Reporter
